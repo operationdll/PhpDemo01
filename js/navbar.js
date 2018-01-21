@@ -2,7 +2,6 @@ function reseizeWindow(){
 	//mobile src="js/navbar.js"
 	if(($(window).width() < 992)){
 		$('.navigation-menu a').css("color","black");
-		$('.navigation-menu a button').css("margin-top","0");
 	}else{
 		if ($(window).scrollTop() >= 100 ) {
 			$('#topnav').addClass('scroll');
@@ -14,7 +13,6 @@ function reseizeWindow(){
 			$('.navigation-menu a').css("color","white");
 			$('#topnav').css("background","");
 		}
-		$('.navigation-menu a button').css("margin-top","-5%");
 	}
 	if(($(window).width() < 992)){
 		$('.navbar-toggle').show();
