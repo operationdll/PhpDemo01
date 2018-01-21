@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/slimmenu.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+<!----start-team--------->
+<div class="group_1" id="group_1">
+	<div class="group_1-items"></div>
+</div>
+<div class="group_2" id="Portfolio">
+  <h3 class="heading">&nbsp;</h3>
+  <div class="group_2_items">
+    <div class="wrap">
+      <div id="owl-demo1" class="owl-carousel">
+        <div class="item">
+          <div class="carousel">            </div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+					  <div class="clear"> </div>
+						<div class="brows_button_3"> <a href="#">Browser portfolio</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!-- Owl Carousel Assets --> 
+<!-- Prettify --> 
+<script src="js/owl.carousel.js"></script> 
+<script>
+		    $(document).ready(function() {
+		
+		      $("#owl-demo").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav :true,
+			    scrollPerPage :true,
+			    pagination : true,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+		    $(document).ready(function() {
+		
+		      $("#owl-demo1").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav : true,
+			    scrollPerPage :true,
+			    pagination : false,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+		    $(document).ready(function() {
+		
+		      $("#owl-demo2").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : false,
+			    navigationText : ["",""],
+			    rewindNav : false,
+			    scrollPerPage :true,
+			    pagination : false,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+		    </script> 
+<!-- //Owl Carousel Assets -->
+<div class="skills" id="skills"><script src="js/plugins.js"></script> 
+	<script src="js/script.js"></script> 
+</div>
+</body>
+</html>

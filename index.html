@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rocketfox</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/bundle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Halant:300,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/dmaku.css">
+  <link rel="stylesheet" href="dist/MODALit.min.css">
+  <link rel="stylesheet" href="css/daniel.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <script>
+    //Scorll
+    var $scorll=0;
+
+    //hide Agronomic function(Daniel)
+    function closeAgronomic(){
+      $(".agronomicClass").hide();
+      $("body").css("overflow-y","scroll");
+      setTimeout(function(){
+        $(document).scrollTop($scorll);
+        $scorll=0;
+      },100);
+    }
+
+    function startProject(){
+      window.location="startproject.php" ;
+    }
+
+    function aboutFun(){
+      window.location="about.html" ;
+    }
+  </script>
+</head>
+
+<body>
+<!-- Preloader-->
+<div id="loader">
+  <div class="centrize">
+    <div class="v-center">
+      <div id="mask">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Preloader-->
+<!-- Navigation Bar-->
+<header id="topnav">
+  <div class="container" style="width: 100%">
+    <!-- Logo container-->
+    <div class="logo" style="padding-left: 3%">
+      <a href="index.html">
+        <img src="images/logo_light.png" alt="" class="logo-light">
+        <img src="images/logo_dark.png" alt="" class="logo-dark">
+      </a>
+    </div>
+    <!-- End Logo container-->
+    <div class="menu-extras">
+      <div class="menu-item">
+        <!-- Mobile menu toggle-->
+        <a class="navbar-toggle">
+          <div class="lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <!-- End mobile menu toggle-->
+      </div>
+    </div>
+    <div id="navigation">
+      <!-- Navigation Menu-->
+      <ul class="navigation-menu">
+        <li>
+          <a href="#">
+            Work
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="aboutFun()">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Careers
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            +64 7 802 4323
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <button type="button" class="btn btn-success" style="height: 20%;margin-top: -5%;background-color:black;border-color: black;border-radius: 0px;" onclick="startProject()">Start a Project</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+   </div>
+</header>
+<!-- End Navigation Bar-->
+<!-- Home section-->
+<section id="home">
+  <!-- Video background-->
+  <div id="video-wrapper">
+    <video autoplay="true" loop="true" preload="auto">
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.webm" type="video/webm">
+    </video>
+  </div>
+  <!-- end of video background-->
+  <!-- Home slider-->
+  <div id="home-slider" class="flexslider kenburn">
+    <ul class="slides">
+      <li>
+        <!--<img src="images/bg/banner1.jpg" alt="">-->
+        <div class="slide-wrap">
+          <div class="slide-content bold-text">
+            <div class="container">
+              <h6 class="upper">Rocket Fox Website Lab</h6>
+              <h1 class="upper">Impress Your Client<span class="red-dot"></span></h1>
+              <p class="mt-50"><a href="#about" data-scroll="true" class="btn btn-color btn-scroll"><span><i class="ti-angle-down"></i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <!--<img src="images/bg/banner2.jpg" alt="">-->
+        <div class="slide-wrap">
+          <div class="slide-content bold-text">
+            <div class="container">
+              <h6 class="upper">Rocket Fox Website Lab</h6>
+              <h1 class="upper">Empower Your Business<span class="red-dot"></span></h1>
+              <p class="mt-50"><a href="#about" data-scroll="true" class="btn btn-color btn-scroll"><span><i class="ti-angle-down"></i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <!--<img src="images/bg/banner3.jpg" alt="">-->
+        <div class="slide-wrap">
+          <div class="slide-content bold-text">
+            <div class="container">
+              <h6 class="upper">Rocket Fox Website Lab</h6>
+              <h1 class="upper">Create Higher Understanding<span class="red-dot"></span></h1>
+              <p class="mt-50"><a href="#about" data-scroll="true" class="btn btn-color btn-scroll"><span><i class="ti-angle-down"></i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- end of home slider-->
+</section>
+<!-- end of home section-->
+<section class="p-0 b-0">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-4 img-side img-left mb-0" style="position: absolute">
+        <div class="img-holder">
+          <img src="images/bg/banner3.jpg" alt="" class="bg-img">
+          <div class="centrize">
+            <div class="v-center">
+              <div class="title txt-xs-center">
+                <h4 class="upper white-text">This is what we love to do.</h4>
+                <h3 class="white-text">Expertise<span class="red-dot"></span></h3>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of side background image-->
+      <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+        <div class="services">
+          <div class="row">
+            <div class="col-sm-6 border-bottom border-right">
+              <div class="service"><i class="icon-focus"></i><span class="back-icon"><i class="icon-focus"></i></span>
+                <h4>Website</h4>
+                <hr>
+                <p class="alt-paragraph">Static and dynamic website design, develop and deploy.</p>
+              </div>
+              <!-- end of service-->
+            </div>
+            <div class="col-sm-6 border-bottom">
+              <div class="service"><i class="icon-layers"></i><span class="back-icon"><i class="icon-layers"></i></span>
+                <h4>E-Commerce System</h4>
+                <hr>
+                <p class="alt-paragraph">Shopping website, online mutli user shopping system</p>
+              </div>
+              <!-- end of service-->
+            </div>
+            <div class="col-sm-6 border-bottom border-right">
+              <div class="service"><i class="icon-mobile"></i><span class="back-icon"><i class="icon-mobile"></i></span>
+                <h4>Mobile App</h4>
+                <hr>
+                <p class="alt-paragraph">Expand your business on mobile device with powerful apps</p>
+              </div>
+              <!-- end of service-->
+            </div>
+            <div class="col-sm-6 border-bottom">
+              <div class="service"><i class="icon-globe"></i><span class="back-icon"><i class="icon-globe"></i></span>
+                <h4>Enterprise System</h4>
+                <hr>
+                <p class="alt-paragraph">Web based OA, ERP, CRM and PSI system</p>
+              </div>
+              <!-- end of service-->
+            </div>
+          </div>
+        </div>
+        <!-- end of row-->
+      </div>
+    </div>
+    <!-- end of row -->
+  </div>
+</section>
+<section id="portfolio" class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="title m-0 txt-xs-center txt-sm-center">
+          <h2 class="upper">Selected Works<span class="red-dot"></span></h2>
+          <hr>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul id="filters" class="no-fix mt-25">
+          <!--
+          <li data-filter="*" class="active">All</li>
+          -->
+          <li data-filter=".instance">Our Work</li>
+          <li data-filter=".website">Website</li>
+        </ul>
+        <!-- end of portfolio filters-->
+      </div>
+    </div>
+    <!-- end of row-->
+  </div>
+  <div class="section-content pb-0">
+    <div id="works" class="four-col wide mt-50">
+      <div class="work-item instance">
+        <div class="work-detail">
+          <a href="http://threelegfrog.co.nz">
+            <img src="images/portfolio/frog.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>ThreeLegFrog</h3>
+                  <p>Restaurant</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item instance">
+        <div class="work-detail">
+          <a href="http://otikoki.co.nz">
+            <img src="images/portfolio/otikoki.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Otikoki Safari</h3>
+                  <p>Tourism company</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item instance">
+        <div class="work-detail">
+          <a href="http://volcanobar.co.nz">
+            <img src="images/portfolio/bar.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Volcano Bar and Restaurant</h3>
+                  <p>Grill Theme Restaurant</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item instance">
+        <div class="work-detail">
+          <a href="http://futurehealth2000.co.nz">
+            <img src="images/portfolio/fh.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Future Health</h3>
+                  <p>E-Commerce system</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item instance">
+        <div class="work-detail">
+          <a href="http://axlepark.co.nz">
+            <img src="images/portfolio/axlepark.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>axlepark</h3>
+                  <p>Fashion Shop</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#"  loadPopUrl="showcase/websites/agriculture/index.html">
+            <img src="images/portfolio/agriculture.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center" style="float:left;margin-top:40%;margin-left:30%;">
+                  <h3>Obscura</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a loadPopUrl="showcase/websites/concert/index.html" href="#">
+            <img src="images/portfolio/concert.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Concert</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/enterprise/index.html">
+            <img src="images/portfolio/enterprise.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Enterprise</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/fashion/index.html">
+            <img src="images/portfolio/fashion.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Fashion</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/fwst/index.html">
+            <img src="images/portfolio/fwst.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>FWST</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/garden/index.html">
+            <img src="images/portfolio/garden.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Fashion</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/grill/index.html">
+            <img src="images/portfolio/grill.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Grill</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/helios/index.html">
+            <img src="images/portfolio/helio.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Helio</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/hyperspace/index.html">
+            <img src="images/portfolio/hyperspace.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Hyperspace</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/obscura/index.html">
+            <img src="images/portfolio/obscura.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Obscura</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/overflow/index.html">
+            <img src="images/portfolio/overflow.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Overflow</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/resume/index.html">
+            <img src="images/portfolio/resume.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Resume</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/solid/index.html">
+            <img src="images/portfolio/solid.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Soild</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/stunning/index.html">
+            <img src="images/portfolio/stunning.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Stunning</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="work-item website">
+        <div class="work-detail">
+          <a href="#" loadPopUrl="showcase/websites/voltage/index.html">
+            <img src="images/portfolio/voltage.jpg" alt="">
+            <div class="work-info">
+              <div class="centrize">
+                <div class="v-center">
+                  <h3>Voltage</h3>
+                  <p>Responsive, Static website</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of portfolio grid-->
+  </div>
+</section>
+<!-- Footer-->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-wrap">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="copy-text">
+            <p><i class="icon-heart red mr-15"></i>© 2017 Rocketfox</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline">
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a target="_blank" href="#"><i class="ti-facebook"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="ti-twitter-alt"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="ti-linkedin"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="ti-instagram"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="ti-dribbble"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of row-->
+    </div>
+  </div>
+  <!-- end of container-->
+</footer>
+<!-- Start popWin -->
+<div class='agronomicClass'>
+  <div style="float:left;display:block;margin-left:12%;margin-top:5%;">
+    <a href="#" class="btn btn-color-out btn-sm" style="background-color: #EF2D56">start project with this template</a>
+  </div>
+  <div style="width:50px;height:50px;float:left;display:block;background:white;margin-left:55%;padding:3px;margin-top:3%;">
+    <font size="10"><a href="#" onclick="closeAgronomic()">X</a></font>
+  </div>
+  <div id="agrContext" class="agrContext"></div>
+</div>
+<!-- End popWin -->
+<!-- end of footer-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
+</body>
+
+</html>
