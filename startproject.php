@@ -181,7 +181,7 @@
 			  ?>
               <div class="form-group">
                 <div class="checkout-submit" >
-                  <button type="button" class="btn btn-color btn-block">Submit Button</button>
+                  <button type="button" class="btn btn-color btn-block" bnt="button">Submit Button</button>
                 </div>
 				<div style="float:left;margin-left:100%;margin-top:-6%;display:block;position:absolute;width:40%;">
 					<font color="red" id="totalFont" t="0.0" size="5">Total($):0.00</font>

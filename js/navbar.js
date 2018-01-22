@@ -21,6 +21,15 @@ function reseizeWindow(){
 	}else{
 		$('.navbar-toggle').hide();
 	}
+	//add class
+	$("a,div").css("font-family","FreightSansProBook");
+	$("a[bnt],button[bnt]").css({"border":"1px solid black","background-color":"black","color":"white","border-radius":"1px"});
+	$("a[bnt],button[bnt]").mouseover(function(){
+		$(this).css({"background-color":"white","color":"black"});
+	});
+	$("a[bnt],button[bnt]").mouseout(function(){
+		$(this).css({"background-color":"black","color":"white"});
+	});
 }
 
 $(window).resize(function(){

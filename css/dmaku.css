@@ -65,7 +65,7 @@ h2 {
 }
 
 h2:first-letter {
-    color: rgb(26, 182, 255);
+    color: #444;
 }
 
 h2:after {
@@ -353,7 +353,7 @@ form p {
     top: 50%;
     left: 0;
     right: 0;
-    bottom 0;
+    bottom: 0;
     margin-top: -40px;
     padding: 0;
 }
